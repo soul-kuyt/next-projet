@@ -1,0 +1,82 @@
+.plan-section{
+    display: grid;
+    padding: 3rem 1rem;
+    min-height: 100vh;
+    background-color: #e5e5e7;
+    align-items: center;
+    align-content: center;
+    gap: 3rem;
+}
+.title{
+    padding: 1rem;
+    width: 100%;
+    text-align: center; 
+}
+
+.card{
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    width: 100%;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+.card > div:nth-child(1){
+    color: #1a237e;
+    background-color: #ffffff;
+}
+.card  > div:nth-child(2){
+    position: relative;
+    color: #ffffff;
+    background-color: #1a237e;
+}
+.card > div:nth-child(3){
+    color: #1a237e;
+    background-color: #ffffff;
+}
+.cards{
+    padding: 1rem;
+    flex-direction: column;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.cards button{
+    right: 50%;
+    bottom: -2rem;
+    transform: translate(50%,-50%);
+    position: absolute;
+    padding:  10px 10px;
+    background-color: #ffc107;
+    border-radius: 25px;
+    border: 1px;
+}
+.cards button:hover{
+    background-color: #cdcefc;
+    color: #ffffff;
+}
+.title h2{
+    font-size: 2rem ;
+    font-weight: 700;
+}
+.cards h3{
+    padding: 1rem;
+    font-size: 1.5rem ;
+    font-weight: 700;
+}
+.cards h4{
+    padding: 1rem;
+}
+.cards p{
+    font-size: 0.9rem;
+    padding: 1rem;
+    text-align: justify;
+}
+
+@media (max-width: 768px){
+    .card{  
+    grid-template-columns: repeat(1, 1fr);
+    }
+}
