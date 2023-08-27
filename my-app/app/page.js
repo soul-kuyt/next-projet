@@ -1,4 +1,5 @@
 import About from "@/components/about/About"
+import Footer from "@/components/footer/Footer"
 import Plan from "@/components/plan/Plan"
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
       <h1 className='text-3xl'> Acceuil </h1>
       <About/>
       <Plan/>
+      <Footer/>
     </main>
   )
 }
